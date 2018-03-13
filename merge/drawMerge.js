@@ -36,24 +36,17 @@ ctx.lineWidth = 16;
 ctx.lineCap = "square";
 ctx.lineJoin = "bevel";
 ctx.beginPath();
-ctx.moveTo(100, 230);
-ctx.lineTo(100, 180);
-ctx.moveTo(100, 176); // A kludge to make this not look as bizzare
-ctx.lineTo(120, 150);
-ctx.moveTo(120, 150); // Likewise.
-ctx.lineTo(120, 100);
-ctx.closePath();
+ctx.moveTo(110, 220);
+ctx.lineTo(110, 160);
+ctx.lineTo(130, 130);
+ctx.lineTo(130, 80);
 ctx.stroke();
-/*
-I have no idea why this is so screwed up. I've been fiddling with it for hours.
-I give up. I need to get help.
-*/
+ctx.closePath();
 
 
 // Draw straight black line
 ctx.beginPath();
-ctx.moveTo(160, 230);
-ctx.lineTo(160, 100);
-ctx.closePath();
+ctx.moveTo(170, 220);
+ctx.lineTo(170, 80);
+
 ctx.stroke();
-// You tell me why these end up having different heights despite having identical attributes and y-values. I have no clue.
